@@ -1,0 +1,21 @@
+:root {
+--main-color: rgb(22, 139, 6);  
+}
+
+body {
+    font-size: 16px;
+    background-color: var(--main-color)
+}
+
+.name { 
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 150%;
+    background-color: lightblue;
+    color: var(--main-color);
+    display: inline-block;   
+    margin: 20px 0 0 35px;
+    padding: 15px;
+    border: solid 2px red;
+    border-radius: 50px;
+    box-shadow: 5px 5px 5px red;
+}
