@@ -1,6 +1,6 @@
 body {
     font-size: 16px;
-    background-color: rgb(186, 58, 58);
+    background-color: rgb(130, 42, 42);
     margin: 0;
     padding: 0;
 }
@@ -17,7 +17,7 @@ body {
     font-size: 150%;
     background-color: lightblue;
     color: rgb(27, 132, 27);   
-    margin: 20px 0 0 35px;
+    margin: 20px 0 0 60px;
     padding: 15px;
     border: solid 2px rgb(87, 87, 231);
     border-radius: 50px;
@@ -31,10 +31,25 @@ body {
     margin: 40px 15px 10px 10px;
     border: solid 3px rgb(87, 87, 231);
     border-radius: 30px;
-    box-shadow: 10px 10px 10px rgb(87, 87, 231);
+    box-shadow: 5px 5px 5px rgb(87, 87, 231);
 }
+
 .links a {
     text-decoration: none;
     color: white;
+}
 
+.links a:hover {
+	color: rgb(0, 0, 0);
+}
+
+section {
+    float: left;    
+}
+
+.mypic {
+    background-position: center;
+    height: 200px;
+    margin: 20px 1000px 0 20px;
+    border-radius: 30px;
 }
