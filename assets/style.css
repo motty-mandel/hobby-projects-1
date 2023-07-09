@@ -1,3 +1,7 @@
+:root {
+    --mainColor: rgb(87, 87, 231)
+}
+
 body {
     font-size: 16px;
     background-color: rgb(130, 42, 42);
@@ -7,49 +11,99 @@ body {
 
 .container{
     display: flex;
+    flex-wrap: wrap;
     float: right;   
 }
 
+.navbar {
+
+}
 .name { 
     display: flex;
     float: left;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 150%;
     background-color: lightblue;
     color: rgb(27, 132, 27);   
-    margin: 20px 0 0 60px;
+    margin: 70px 0 0 15px;
     padding: 15px;
-    border: solid 2px rgb(87, 87, 231);
+    border: solid 2px var(--mainColor);
     border-radius: 50px;
-    box-shadow: 5px 5px 5px rgb(87, 87, 231);
+    box-shadow: 5px 5px 5px var(--mainColor);
 }
 
 .links {
-    padding: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 125%;
+    background-color: green;    
+    padding: 10px;    
     display: inline-block;
-    margin: 40px 15px 10px 10px;
-    border: solid 3px rgb(87, 87, 231);
-    border-radius: 30px;
-    box-shadow: 5px 5px 5px rgb(87, 87, 231);
+    margin: 30px 25px 10px 10px;
+    border: solid 3px var(--mainColor);
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px var(--mainColor);
 }
 
 .links a {
     text-decoration: none;
-    color: white;
+    color: black;
 }
 
 .links a:hover {
-	color: rgb(0, 0, 0);
-}
-
-section {
-    float: left;    
+	color: rgb(255, 0, 0);
 }
 
 .mypic {
-    background-position: center;
+    image-rendering: auto;
+    align-items: center;
     height: 200px;
-    margin: 20px 1000px 0 20px;
-    border-radius: 30px;
+    margin: 30px 0 0 50px;
+    border: solid 3px var(--mainColor);
+    border-radius: 100px;
 }
+
+.separate {
+    background-color: black;
+    height: 25px;
+    margin-top: 30px;
+    border-radius: 50px;
+}
+
+.work{
+    display: flex;
+    flex-wrap: wrap;
+    float: left;
+}
+
+.work-pic-1 {
+    height: 450px;
+    border: solid 3px var(--mainColor);
+    border-radius: 50px;
+    margin: 100px 20px 0 10px;
+}
+
+.about-me p {
+    font-size: 30px;
+    margin: 0 20px 0 0;
+    padding: 50px 0 20px 0;
+    text-align: right;
+}
+
+.about-me h1 {
+    font-size: 80px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0 0 30px 20px;
+    text-decoration: overline;
+    color: rgb(49, 49, 236);
+    text-align: left;
+
+}
+
+.work h1 {
+    font-size: 80px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 100px 0 0 100px;
+    text-decoration: overline;
+    color: rgb(49, 49, 236);
+}
+
