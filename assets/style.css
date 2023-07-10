@@ -4,9 +4,13 @@
 
 body {
     font-size: 16px;
-    background-color: rgb(130, 42, 42);
+    background-color: rgb(255, 205, 205);
     margin: 0;
     padding: 0;
+}
+
+.navbar {
+    margin-bottom: 30px;
 }
 
 .container{
@@ -15,9 +19,6 @@ body {
     float: right;   
 }
 
-.navbar {
-
-}
 .name { 
     display: flex;
     float: left;
@@ -32,7 +33,7 @@ body {
     box-shadow: 5px 5px 5px var(--mainColor);
 }
 
-.links {
+.navlinks {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 125%;
     background-color: green;    
@@ -44,12 +45,12 @@ body {
     box-shadow: 5px 5px 5px var(--mainColor);
 }
 
-.links a {
+.navlinks a {
     text-decoration: none;
     color: black;
 }
 
-.links a:hover {
+.navlinks a:hover {
 	color: rgb(255, 0, 0);
 }
 
@@ -63,47 +64,75 @@ body {
 }
 
 .separate {
-    background-color: black;
+    background-image: linear-gradient(black, rgb(70, 67, 67));
     height: 25px;
-    margin-top: 30px;
     border-radius: 50px;
 }
 
-.work{
+.about-me {
     display: flex;
-    flex-wrap: wrap;
-    float: left;
-}
-
-.work-pic-1 {
-    height: 450px;
-    border: solid 3px var(--mainColor);
-    border-radius: 50px;
-    margin: 100px 20px 0 10px;
-}
-
-.about-me p {
-    font-size: 30px;
-    margin: 0 20px 0 0;
-    padding: 50px 0 20px 0;
-    text-align: right;
+    justify-content: space-between;
 }
 
 .about-me h1 {
     font-size: 80px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    margin: 0 0 30px 20px;
+    margin: 20px 0 0 20px;
+    padding: 40px 0 70px 0;
     text-decoration: overline;
     color: rgb(49, 49, 236);
-    text-align: left;
+}
 
+.about-me p {
+    font-size: 200%;
+    margin: 30px 10px 0 0;
+    padding: 40px 0 70px 0;
+}
+
+.work {
+    display: flex;
 }
 
 .work h1 {
     font-size: 80px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    margin: 100px 0 0 100px;
+    margin: 20px 0 0 20px;
+    padding: 40px 0 70px 0;
     text-decoration: overline;
     color: rgb(49, 49, 236);
 }
 
+.work #img1 {
+    height: 400px;
+    margin: 40px 100px 40px 300px;
+    border: solid 3px var(--mainColor);
+    border-radius: 40px;
+}
+
+.work #img2 {
+    height: 100px;
+    margin: 40px 100px 0 300px;
+    border: solid 3px var(--mainColor);
+    border-radius: 40px;    
+}
+
+.contact-me {
+    display: flex;
+}
+.contact-me h1 {
+    font-size: 80px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 20px 0 0 20px;
+    padding: 40px 0 70px 0;
+    text-decoration: overline;
+    color: rgb(49, 49, 236);
+}
+
+.contact-me li {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 125%;   
+    padding: 10px;    
+    display: inline-block;
+    justify-content: flex-end;
+    margin: 30px 25px 10px 10px;
+}

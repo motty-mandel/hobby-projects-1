@@ -8,39 +8,55 @@
     <link rel="stylesheet" href="./assets/style.css">
 </head>
 <body>
-    <header>    
+    <header class="navbar">    
         <div class="name">
             <h1 >Motty Mandel</h1>
         </div>    
         <div class="container">
             <ul>
-                <li class="links"><a href="#">About Me</a></li>
-                <li class="links"><a href="#">Work</a></li>
-                <li class="links"><a href="#">Contact Me</a></li>
-                <li class="links"><a href="#">Resume</a></li>
+                <li class="navlinks"><a href="#about-me">About Me</a></li>
+                <li class="navlinks"><a href="#work">Work</a></li>
+                <li class="navlinks"><a href="#contact">Contact Me</a></li>
+                <li class="navlinks"><a href="#">Resume</a></li>
             </ul>
         </div>
         <section >
-        <img class="mypic" src="./assets/images/me sleeping in tesla.jpg" alt="me laying in a car">
+            <img class="mypic" src="./assets/images/me sleeping in tesla.jpg" alt="me laying in a car">
         </section>
     </header>
-<div class="separate">
-</div>
+
+            <div class="separate">
+            </div>
+
     <main>
-        <article class="about-me">
-            <p>
-                My name is Motty Mandel. I enjoy outdoor activities, hikes, camping
-                <br>
-                 and swimming. I like reading and tinkering with electronics.
-            </p>
+        <section class="about-me" id="about-me">
             <h1>ABOUT ME</h1>
-        </article>
-<div class="separate">
-</div>       
-        <article class="work">
-            <img class="work-pic-1" src="./assets/images/Screenshot (3).png" alt="coding-study-guide">
+            <p>
+            My name is Motty Mandel. I like outdoor activities such as hiking,
+            <br>
+            camping and swimming.
+            </p>
+        </section>
+        
+        <div class="separate">
+        </div>
+
+        <section class="work" id="work">
             <h1>WORK</h1>
-        </article>
+            <a href="https://motty-mandel.github.io/pre-work-repo/"><img id="img1" src="./assets/images/study-guide.png" alt="coding-study-guide"></a>
+        </section>
+  
+        <div class="separate">
+        </div>
+
+        <section class="contact-me" id="contact">
+            <h1>CONTACT</h1>
+                    <ul>
+                        <li class="links">Gmail</li>
+                        <li class="links">Instagram</li>
+                        <li class="links">Github</li>
+                    </ul>
+        </section>
     </main>
 </body>
 </html>
