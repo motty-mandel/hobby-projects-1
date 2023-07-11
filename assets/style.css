@@ -171,8 +171,7 @@ body {
 @media screen and (max-width: 768px) {
      .about-me h1,
      .work h1,
-     .contact-me h1
-     .about-me p {
+     .contact-me h1 {
         font-size: xx-large;
     }
 
