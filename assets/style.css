@@ -1,30 +1,37 @@
+/*Allows for the making of variables*/
 :root {
     --mainColor: rgb(87, 87, 231)
 }
 
+/* Sets the base font size, margin and padding*/
 body {
     font-size: 16px;
     background-color: rgb(255, 205, 205);
+    background-image: linear-gradient(rgb(255, 205, 205), rgb(236, 63, 63));
     margin: 0;
     padding: 0;
 }
 
+/*Makes the navbar larger*/
 .navbar {
     margin-bottom: 30px;
+    
 }
 
+/*Deals with the ul flex properties*/
 .container{
     display: flex;
     flex-wrap: wrap;
     float: right;   
 }
 
+/*Styles the main name*/
 .name { 
     display: flex;
     float: left;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 150%;
-    background-color: lightblue;
+    background-image: linear-gradient(lightblue, rgb(0, 183, 255));
     color: rgb(27, 132, 27);   
     margin: 70px 0 0 15px;
     padding: 15px;
@@ -33,27 +40,31 @@ body {
     box-shadow: 5px 5px 5px var(--mainColor);
 }
 
+/*Styles the navlinks*/
 .navlinks {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 125%;
-    background-color: green;    
+    font-size: 125%;    
     padding: 10px;    
     display: inline-block;
     margin: 30px 25px 10px 10px;
     border: solid 3px var(--mainColor);
     border-radius: 10px;
     box-shadow: 5px 5px 5px var(--mainColor);
+    background-image: linear-gradient(green, rgb(28, 174, 38));
 }
 
+/*Styles the navlinks a tag*/
 .navlinks a {
     text-decoration: none;
     color: black;
 }
 
+/*Adds hover capabilities to the navlinks*/
 .navlinks a:hover {
-	color: rgb(255, 0, 0);
+	color: rgb(215, 42, 42);
 }
 
+/*Styles the main picture*/
 .mypic {
     image-rendering: auto;
     align-items: center;
@@ -63,17 +74,20 @@ body {
     border-radius: 100px;
 }
 
+/*Styles the black separation lines*/
 .separate {
     background-image: linear-gradient(black, rgb(70, 67, 67));
     height: 25px;
     border-radius: 50px;
 }
 
+/*Adds flexbox to the about me section*/
 .about-me {
     display: flex;
     justify-content: space-between;
 }
 
+/*Styles the about me section h1*/
 .about-me h1 {
     font-size: 80px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -83,16 +97,22 @@ body {
     color: rgb(49, 49, 236);
 }
 
+/*Styles the about me section paragraph*/
 .about-me p {
-    font-size: 200%;
-    margin: 30px 10px 0 0;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 175%;
+    margin: 30px 20px 0 0;
     padding: 40px 0 70px 0;
+    color: white;
 }
 
+/*Makes the work section a flexbox*/
 .work {
     display: flex;
+    justify-content: space-between;
 }
 
+/*Styles the work section h1*/
 .work h1 {
     font-size: 80px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -102,23 +122,22 @@ body {
     color: rgb(49, 49, 236);
 }
 
-.work #img1 {
+/*Styles the work image*/
+.work #img {
     height: 400px;
-    margin: 40px 100px 40px 300px;
+    margin: 40px 20px 40px 0;
     border: solid 3px var(--mainColor);
     border-radius: 40px;
 }
 
-.work #img2 {
-    height: 100px;
-    margin: 40px 100px 0 300px;
-    border: solid 3px var(--mainColor);
-    border-radius: 40px;    
-}
-
+/*Makes the contact-me section a flexbox*/
 .contact-me {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
+
+/*Styles the contact-me h1*/
 .contact-me h1 {
     font-size: 80px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -128,11 +147,40 @@ body {
     color: rgb(49, 49, 236);
 }
 
+/*Styles the contact-me list*/
 .contact-me li {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 125%;   
-    padding: 10px;    
-    display: inline-block;
-    justify-content: flex-end;
-    margin: 30px 25px 10px 10px;
+    padding: 10px;
+    margin: 100px 20px 0 0;
+    display: inline-block;    
+}
+
+/*Styles the contact links*/
+.links  {
+    color: blue;
+    text-decoration: none;
+}
+
+@media screen (max-width: 982) {
+    .work img {
+        height: 250px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+     .about-me h1,
+     .work h1,
+     .contact-me h1
+     .about-me p {
+        font-size: xx-large;
+    }
+
+    .about-me p {
+        font-size: x-large;
+    }
+
+    #img {
+        height: 100%;
+    }
 }
