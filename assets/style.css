@@ -3,6 +3,11 @@
     --mainColor: rgb(87, 87, 231)
 }
 
+
+* {
+    box-sizing: border-box;
+}
+
 /* Sets the base font size, margin and padding*/
 body {
     font-size: 16px;
@@ -162,9 +167,10 @@ body {
     text-decoration: none;
 }
 
-@media screen (max-width: 982) {
-    .work img {
-        height: 250px;
+/* Makes the screen responsive  */
+@media screen and (max-width: 982px) {
+    .work #img {
+        height: 300px;
     }
 }
 
@@ -178,8 +184,11 @@ body {
     .about-me p {
         font-size: x-large;
     }
+}
 
-    #img {
-        height: 100%;
+
+@media screen and (max-width: 768px) {
+    .work #img {
+        height: 200px;
     }
 }
