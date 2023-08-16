@@ -129,8 +129,8 @@ body {
 
 /*Styles the work image*/
 .work #img {
-    height: 400px;
-    margin: 40px 20px 40px 0;
+    height: 200px;
+    margin: 40px 10px 40px 0;
     border: solid 3px var(--mainColor);
     border-radius: 40px;
 }
@@ -170,7 +170,7 @@ body {
 /* Makes the screen responsive  */
 @media screen and (max-width: 982px) {
     .work #img {
-        height: 300px;
+        height: 100px;
     }
 }
 
@@ -189,6 +189,6 @@ body {
 
 @media screen and (max-width: 768px) {
     .work #img {
-        height: 200px;
+        height: 50px;
     }
 }
